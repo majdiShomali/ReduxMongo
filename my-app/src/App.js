@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import PokemonForm from './componentes/pokemonForm/PokemonForm';
+import PokemonForm from './componentes/pokemonForm/Pokemon';
 import SignUp from './componentes/SignUpAndLogIn/SignUp'
 import LogIn from './componentes/SignUpAndLogIn/Login';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -48,7 +48,7 @@ console.log(ManegeRouters)
       <Router>
         {/* <NavListMenu /> */}
         <Routes>
-          {/* <Route index element={<PokemonForm />} /> */}
+          <Route index element={<PokemonForm />} />
           <Route path="SignUp" element={<SignUp />} />    
           <Route path="LogIn" element={<LogIn />} />    
         </Routes>
